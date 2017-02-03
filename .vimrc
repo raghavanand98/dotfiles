@@ -1,4 +1,4 @@
-
+set path+=**
 set wildmenu
 
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -37,8 +37,8 @@ nnoremap <C-a> :NERDTreeToggle<CR>
 
 set laststatus=2
 let mapleader = ';'
-imap <silent> <C-C> </<C-X><C-O><Esc>bba
-imap <silent> <C-c> </<C-X><C-O><Esc>bba<Enter><Enter><Esc>ka<Tab>
+inoremap <silent> <C-x> </<C-X><C-O><Esc>bba
+inoremap <silent> <C-c> </<C-X><C-O><Esc>bba<Enter><Enter><Esc>ka<Tab>
 inoremap '' ''<ESC>i
 inoremap "" ""<ESC>i
 inoremap (; ( )<ESC>i  <ESC>i<BS>
@@ -48,9 +48,8 @@ nnoremap <leader>o :only<ENTER>
 nnoremap <leader><leader> <ESC>:w<ENTER>
 nnoremap <leader>q :wq<ENTER>
 nnoremap <leader>w :set wrap!<ENTER>
+set nocompatible
 
-let g:airline#extensions#syntastic#enabled = 1
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+nnoremap <leader>f :find
+
+
