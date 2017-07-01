@@ -1,4 +1,6 @@
 
+
+set path+=**
 set wildmenu
 
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -43,3 +45,20 @@ inoremap "" ""<ESC>i
 inoremap (( ( )<ESC>i  <ESC>hi
 inoremap [[ [ ]<ESC>i  <ESC>hi
 inoremap {{ { }<ESC>i  <ESC>hi
+inoremap <silent> <C-x> </<C-X><C-O><Esc>bba
+inoremap <silent> <C-c> </<C-X><C-O><Esc>bba<Enter><Enter><Esc>ka<Tab>
+inoremap '' ''<ESC>i
+inoremap "" ""<ESC>i
+inoremap (; ( )<ESC>i  <ESC>i<BS>
+inoremap [; [ ]<ESC>i  <ESC>i<BS>
+inoremap {; { }<ESC>i  <ESC>i<BS>
+nnoremap <leader>o :only<ENTER>
+nnoremap <leader><leader> <ESC>:w<ENTER>
+nnoremap <leader>q :wq<ENTER>
+nnoremap <leader>w :set wrap!<ENTER>
+set nocompatible
+
+nnoremap <leader>f :find\ 
+nnoremap <leader>b :b\
+
+
